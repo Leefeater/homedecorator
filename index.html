@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Decorator App</title>
+	<meta charset="UTF-8">
+	<!--Bootstraps css-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--Fonts-->
+	<!--Link to jQuery UI css-->
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="css/main.css">
+	<!--JS/jQuery links-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!--Temp sript tags to be moved to script.js-->
+	<script src="js/jqueryapps.1.0.js"></script>
+</head>
+<body>
+<div class="container-fluid heading">
+	<div class="row">
+		<div class="col-md-offset-3 col-md-5">
+			<h1>Home Decorator Application <br><small> Plan your design</small></h1>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="room-box col-md-12">
+			<img class="room-photo" src="img/empty-room.jpg">
+				<div id="furniture-box-index" class="furniture-box ui-widget-content">
+					<img id="furniture-piece-index" class="furniture-piece" src="img/sofa.png">
+				</div>
+		</div>
+	</div>
+</div>
+<button id="add-furniture" class="btn">Change Furniture</button>
+<button id="change-room" class="btn">Change Room</button>
+<div class="room-changer">
+	<div class="customize-label">Furniture URL</div>
+	<form id="room-form">
+		<input id="room-url" type="text" placeholder="Enter Picture URL">
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+	<div class="customize-furniture" id="customize-furniture-1">
+		<div class="customize-label">Furniture URL</div>
+			<form id="furniture-changer">
+			<input data-index=1 class="customize-furniture-input" placeholder="Enter Picture URL">
+			<input type="submit" value="Submit">
+		</div>
+	</div>
+</body>
+</html>
